@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ex09</title>
+
+<style type="text/css">
+	.nav {background: black;}
+	.nav > ul {list-style: none; display: flex; justify-content: center;}
+	/*list-style: none ul 리스트 가장앞 점에 대한 스타일*/
+	/*display: flex ul리스트 배치에 대한 스타일*/
+	/*justify-content: flex-end 배치할 위치에 대한 스타일*/
+	.nav > ul li {margin : 10px 13px; padding : 10px 10px;}
+	/*margin :외벽을 밀어내는 효과 첫번째 숫자는 위아래, 두번째 숫자는 좌우*/
+	/*padding : margin과 반대로 안으로 밀어내는 효과 숫자의 위치와 의미는 같다*/
+	
+	.nav > ul li a {text-decoration: none; color:white;}
+	.nav > ul li a:hover { color:orange; border-bottom: 3px dotted orange; transition : all 0.25s}
+	/*border: 태두리 선에 대한 스타일 
+	  solid : 선
+	  dotted : 점선
+	*/
+	
+	
+	  
+	
+</style>
+
+</head>
+<body>
+
+	<nav class="nav">
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Board</a></li>
+			<li><a href="#">Member_SHIP</a></li>
+		</ul>
+	</nav>
+	
+	flex-start : 왼쪽 끝 정렬<br>
+	flex-end : 오른쪽 끝 정렬<br>
+	center : 가운데 정렬<br>
+	space-between : 양쪽 끝 정렬<br>
+	space-around : 요소 좌우 동일 간격으로 정렬<br>
+
+</body>
+</html>

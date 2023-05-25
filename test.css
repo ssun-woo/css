@@ -1,0 +1,8 @@
+@charset "UTF-8";
+/* css파일은 외부 파일로 따로 관리가 가능한데, charset은 html과 맞춰주면 된다 */
+
+.px{font-size: 24px;}
+.pt{font-size: 24pt;}
+.per{font-size: 150%;}
+.em{font-size: 1.5em;}
+

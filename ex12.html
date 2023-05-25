@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ex12</title>
+
+	<style type="text/css">
+		.in-block {
+			background: orange;
+			height: 50px; width : 200px;
+			display: inline-block; /* block에 width를 주는 효과*/
+			line-height: 50px;
+			text-align: center;
+		}
+		/*인라인 방식들은 기본적으로는 크기를 지정할 수 없다*/
+
+		div {
+			background : aqua;
+			width : 300px; height : 300px;
+			display: table-cell;
+			vertical-align: middle;
+			/* line-height: 300px; 여러줄일때 사용하면 각 줄마다 간격이 떨어짐 */
+			text-align: center;
+		}
+		
+		label{
+			height: 100px; background: red;
+			/*
+			line-block의 버티컬은 다음 들어오는 요소의 위치를 변경한다
+			table-cell의 버티컬과는 다르게 동작한다
+			*/
+			display: inline-block;
+			vertical-align: middle;
+			line-height: 50px;
+		}
+		
+	</style>
+	
+</head>
+<body>
+
+	<a href="#" class ="in-block">홈으로 이동</a>
+	<div>
+		여러줄<br>가운데<br>정렬<br>되나요?
+	</div>
+
+	<label>아이디 입력</label><input>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

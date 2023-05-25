@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ex06</title>
+<style type="text/css">
+	div {background: blue; height: 100px; overflow: hidden;}
+	div div {background: red; width : 200px; height: 200px;}
+	/* 실행해보면 범위를 벗어나는 경우가 있음 
+	   다른 범위를 침범할 수 있기때문에 가려줘야함
+	   부모에 overflow 옵션을 사용해서 가려줌
+	*/
+	
+	.txt {height : 100px; width : 100px; background : aqua; overflow: auto;}
+	/*auto는 벗어나는 범위에 대해서는 스크롤형태로 보여준다*/
+	
+	
+</style>
+</head>
+<body>
+	
+	<div>
+		hello
+		<div>css</div>
+	</div>
+	<h1>다음 내용</h1>
+	<hr>
+	<h3>이용 약관</h3>
+	<section class="txt">
+		제20000조<br>
+		회원이 지켜야할 내용이 있다면 지켜주세요<Br>
+		더이상 내용은 없습니다<br>
+		즐거운 목요일이다~<br>
+		즐거운 목요일이다~<br>
+		즐거운 목요일이다~<br>
+		즐거운 목요일이다~<br>
+	</section>
+	
+	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
