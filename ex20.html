@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ex20</title>
+
+<style type="text/css">
+	div {
+		height: 200px;
+		width: 200px;
+		margin: auto;
+	}
+	
+	.id {
+		width: 200px;
+		height : 20px;
+		font-size: 20px;
+		border : none;
+		border-bottom: 2px solid darkgray;
+		padding : 15px 0;	/*밑줄과 아이디 입력의 간격*/
+		margin : 10px 0;	/*password 입력과의 간격*/
+	}
+	
+	.id:focus {
+		outline : none;
+	}
+	
+	.id::-webkit-input-placeholder { /* ctrl + space bar 4번 */
+		text-align: center;
+		letter-spacing: 5px; /*글자들의 간격*/
+	}
+	
+	
+	.pwd {
+		border-radius: 5px;	/*모서리 각 설정*/
+		height: 20px;
+		width : 190px;
+	}
+	
+	.btn {
+		border-radius: 5px;
+		width : 200px;
+		height : 30px;
+		background: olive;
+	}
+
+</style>
+
+</head>
+<body>
+
+	<div>
+		<h3 style="text-align: center;
+			border-bottom : 1px solid;">
+			로그인 페이지
+		</h3>
+		<form action="#">
+			<input type="text" class="id" placeholder ="input id"><br>
+			<input type="password" class="pwd" placeholder ="input password"><br>
+			<input type="submit" class="btn" value="Login"><br>
+		</form>
+		
+	</div>
+
+</body>
+</html>

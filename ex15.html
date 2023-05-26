@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ex15</title>
+
+<style type="text/css">
+	#wrap {
+		width : 50%;
+		height : 200px;
+		border : 10px solid black;
+		margin : auto;	/*div 박스를 항상 가운데로 정렬하기 위해 사용*/
+		text-align: center;
+	}
+	
+	#container {display : flex; /*인라인방식으로 변한다*/}
+	#container div {
+		width : 33.3333333%;	/* 현재 3개의 값이 있기때문에 3개로 나눠줌 
+						   		   고정크기를 쓰면 오류가 발생할 수도있다 */
+		border : 1px solid black;		
+	}
+	
+	#container div:first-child {background: red;}
+	#container div:nth-child(2) {background: green;}
+	#container div:nth-child(3) {background: aqua;}	
+
+</style>
+
+
+</head>
+<body>
+	<div id="wrap">
+	
+		<header style="background: gray;">
+			제목이 들어옵니다
+		</header>
+		
+		<div id="container">
+			<div> <h1>1</h1> </div>
+			<div> <h1>2</h1> </div>
+			<div> <h1>3</h1> </div>
+		</div>
+		
+		<footer style="background: maroon;">
+			바닥글
+		</footer>
+		
+	</div>
+	
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

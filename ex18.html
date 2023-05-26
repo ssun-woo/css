@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ex18</title>
+
+<style type="text/css">
+	
+	.sp {
+		background: cyan;
+		width : 400px;
+		height : 50px;
+	}
+	
+	.rp1 {
+		position : fixed;
+		right : 30px;
+		top : 10p;
+		background: orange;
+		width : 400px;
+		height : 50px;
+		z-index: 1;
+	}
+	.rp2 {
+		position : absolute;
+		right : 60px;
+		top : 20p;
+		background: lime;
+		width : 400px;
+		height : 50px;
+		z-index: 0;
+	}
+	
+	/*
+	absoulte : 스크롤과 상관없이 무조건 그 위치에 고정
+	fixed : 스크롤이 움직이는거에 따라서 같이 이동됨(화면상의 좌표에는 고정)
+	
+	어떤게 조금더 위에 있을지 설정하기 위해서는 z-index옵션을 사용함
+	z-index옵션의 숫자가 높으면 더 위로 올라옴
+	*/
+	
+	
+</style>
+
+</head>
+<body>
+
+	<p class="sp">정적 위치 설정 적용</p>
+	
+	<p class="rp2">절대 위치 설정 적용</p>
+	<div class="rp1">고정 위치 설정<br>
+		<a href="#">클릭해 주세요</a>
+	</div>
+	<!-- 코드의 흐름상 순서에 따라서 위에 올라오는게 다름 -->
+	
+	<p class="sp">정적 위치 설정 적용</p>
+	<p class="sp">정적 위치 설정 적용</p>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
